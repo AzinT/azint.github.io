@@ -14,11 +14,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Azin Taqizadeh</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
     <link rel="icon" href="favicon.ico" />
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@300&family=Sacramento&display=swap"
       rel="stylesheet"
     />
+    <script src="scripts/contactForm.js"></script>
   </head>
   <body>
     <div class="top-container">
@@ -127,6 +129,40 @@
         </div>
       </div>
       <hr />
+      <div class="contact-section">
+        <h2>Stay connected</h2>
+        <form
+          class="contact-form"
+          action="https://formspree.io/az.taqizadeh@yahoo.com"
+          method="POST"
+        >
+          <input
+            type="text"
+            class="contact-form-text"
+            placeholder="Your Name"
+            name="name"
+          />
+          <input
+            type="email"
+            class="contact-form-text email"
+            placeholder="Your Email"
+            name="email"
+          />
+          <textarea
+            class="contact-form-text message"
+            placeholder="Your Message"
+            name="message"
+          ></textarea>
+          <div class="status"></div>
+          <input
+            type="submit"
+            name=""
+            id=""
+            class="contact-form-btn"
+            value="Send"
+          />
+        </form>
+      </div>
       <div class="contact-me">
         <h2>Get In Touch</h2>
         <h3>Lorem ipsum dolor sit amet, non elit.</h3>
