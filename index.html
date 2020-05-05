@@ -11,6 +11,7 @@
       content="Azin, Taqizadeh, Azin Taqizadeh, ataqizad, Azin Taqizadeh Ganji, Taqizadeh Ganji, Ganji, Azin Ganji, portfolio, uWaterloo student, computer engineer, computer, personal website"
     />
     <meta name="author" content="Azin Taqizadeh" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Azin Taqizadeh</title>
     <link rel="stylesheet" href="css/styles.css" />
@@ -20,16 +21,23 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@300&family=Sacramento&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="scripts/contactForm.js"></script>
   </head>
+  <!-- <body tabindex="0"> -->
   <body>
-    <div class="top-container">
-      <img class="top-cloud" src="images/cloud.png" alt="cloud photo" />
-      <h1>Hi, I'm Azin Taqizadeh</h1>
-      <h2 class="programmer">I'm a programmer!</h2>
-      <img class="bottom-cloud" src="images/cloud.png" alt="cloud photo" />
-      <img src="images/mountain.png" alt="mountain photo" />
-    </div>
+    <header>
+      <div class="top-container">
+        <img class="top-cloud" src="images/cloud.png" alt="cloud photo" />
+        <h1>Hi, I'm Azin Taqizadeh</h1>
+        <h2>I'm a programmer!</h2>
+        <!-- <img class="bottom-cloud" src="images/cloud.png" alt="cloud photo" /> -->
+        <!-- <img src="images/mountain.png" alt="mountain photo" /> -->
+      </div>
+    </header>
     <div class="middle-container">
       <div class="profile">
         <img class="avatar" src="images/avatar.png" alt="avatar pic" />
@@ -175,8 +183,14 @@
     </div>
 
     <div class="bottom-container">
-      <a class="footer-link" href="https://www.linkedin.com/AzinT">LinkedIn</a>
-      <a class="footer-link" href="https://github.com/AzinT">Twitter</a>
+      <div style="margin: 24px 0;">
+        <a class="footer-link" href="https://www.linkedin.com/AzinT"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+        <a class="footer-link" href="https://github.com/AzinT"
+          ><i class="fa fa-github"></i
+        ></a>
+      </div>
       <p class="copyright">© 2020 Azin Taqizadeh.</p>
     </div>
   </body>
