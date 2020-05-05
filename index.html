@@ -26,6 +26,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script src="scripts/contactForm.js"></script>
+    <script>
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
   </head>
   <!-- <body tabindex="0"> -->
   <body>
@@ -192,6 +199,9 @@
         ></a>
       </div>
       <p class="copyright">© 2020 Azin Taqizadeh.</p>
+      <button onclick="topFunction()" id="to-top-button" title="Go to top">
+        Top
+      </button>
     </div>
   </body>
 </html>
