@@ -16,6 +16,7 @@
     <title>Azin Taqizadeh</title>
     <link rel="stylesheet" href="css/styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="icon" href="favicon.ico" />
     <link
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&display=swap"
@@ -25,6 +26,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="scripts/navBar.js"></script>
     <script src="scripts/contactForm.js"></script>
     <script>
       // When the user clicks on the button, scroll to the top of the document
@@ -36,12 +38,39 @@
   </head>
   <!-- <body tabindex="0"> -->
   <body>
-    <header>
-      <div class="top-container">
-        <h1 class="hello">Hiiiii, I'm Azin Taqizadeh</h1>
-        <h2 class="hello-description">I'm a programmer!</h2>
+    <div class="responsive-bar">
+      <div class="menu"><h4>menu</h4></div>
+    </div>
+    <!-- nav bar -->
+    <nav>
+      <!-- logo -->
+      <div class="logo">
+        <img src="images/avatar.png" alt="logo" />
       </div>
-    </header>
+      <!-- menu items -->
+      <ul>
+        <li><a href="#c11" class="active">Home</a></li>
+        <li><a href="#c22">Home</a></li>
+        <li><a href="#c33">Home</a></li>
+        <li><a href="#c44">Home</a></li>
+      </ul>
+    </nav>
+    <div class="intro">
+      <div>
+        <h1 class="hello-text">
+          Hello
+        </h1>
+      </div>
+      <div>
+        <p class="intro-text">
+          Second Div
+        </p>
+      </div>
+    </div>
+    <!-- <div class="top-container">
+      <h1>Hi, I'm Azin Taqizadeh</h1>
+      <h2>I'm a programmer!</h2>
+    </div> -->
     <div class="middle-container">
       <div class="profile">
         <img class="avatar" src="images/avatar.png" alt="avatar pic" />
