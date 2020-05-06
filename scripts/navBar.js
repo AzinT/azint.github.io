@@ -8,5 +8,6 @@ $(window).on("scroll", function () {
 $(document).ready(function () {
   $(".menu h4").click(function () {
     $("nav ul").toggleClass("active");
+    $(".menu h4 i").toggleClass("fa-bars fa-times");
   });
 });
