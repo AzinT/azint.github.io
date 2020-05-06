@@ -23,7 +23,9 @@ $(document).ready(function () {
       // Prevent default anchor click behavior
       event.preventDefault();
 
-      $("nav ul").toggleClass("active");
+      $("nav ul li a").removeClass("active");
+      // $("nav ul li a[href=#' + id + ']')").addClass("active");
+
       // Store hash
       var hash = this.hash;
 
