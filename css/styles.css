@@ -368,19 +368,3 @@ textarea.contact-form-text {
 .contact-form-btn:hover {
   background: #2980b9;
 }
-#to-top-button {
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #27496d;
-  color: white;
-  cursor: pointer;
-  padding: 12px 50px;
-  border-radius: 20px;
-}
-#to-top-button:hover {
-  background: #2980b9;
-}
-.hr-none {
-  border: 6px dotted #fff;
-}
