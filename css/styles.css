@@ -1,6 +1,6 @@
 body {
   color: #40514e;
-  margin: 0px;
+  margin: 0;
   padding: 0;
   text-align: center;
   font-family: "Montserrat", sans-serif;
@@ -11,7 +11,7 @@ nav {
   left: 0;
   width: 100%;
   height: 80px;
-  padding: 10px 100px;
+  padding: 10px 80px;
   box-sizing: border-box;
   transition: 0.5s;
   background: #eaf6f6;
@@ -38,6 +38,7 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
+  font-size: 0.8vw;
 }
 nav ul li {
   list-style: none;
@@ -58,11 +59,46 @@ nav ul li a.active,
 nav ul li a:hover {
   color: #fff;
   background: #27496d;
+  border-radius: 4px;
 }
 .responsive-bar {
   display: none;
 }
-@media (max-width: 768px) {
+/* landing page */
+.landing-page {
+  display: block;
+  height: 100vh;
+  width: 100%;
+  background: #eaf6f6;
+}
+.empty-class {
+  float: left;
+  height: 30%;
+  width: 50%;
+}
+.hello-class {
+  float: left;
+  height: 30%;
+  width: 50%;
+}
+.brief-class {
+  float: right;
+  height: 30%;
+  width: 50%;
+}
+.hello-text {
+  font-size: 5vw;
+  padding-top: 11vh;
+  padding-left: 25vw;
+}
+.brief-text {
+  color: #142850;
+  font-size: 1.7vw;
+  padding-top: 11vh;
+  padding-right: 25vw;
+  line-height: 2.5;
+}
+@media (max-width: 801px) {
   .responsive-bar {
     display: block;
     width: 100%;
@@ -105,6 +141,7 @@ nav ul li a:hover {
     background: #142850;
     float: none;
     display: none;
+    font-size: 5vw;
   }
   nav ul.active {
     display: block;
@@ -124,15 +161,11 @@ nav ul li a:hover {
 }
 h1 {
   margin-top: 0px;
-  font-family: "Sacramento", cursive;
-  /* font-size: 5.625rem; */
-  font-size: 5vw;
-  margin: 50px auto 0 auto;
-  color: #66bfbf;
-  line-height: 2;
+  font-family: "Abril Fatface", cursive;
+  color: #142850;
 }
 h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Abril Fatface", cursive;
   font-size: 2.5rem;
   color: #66bfbf;
   padding-bottom: 100px;
@@ -144,18 +177,27 @@ h3 {
 }
 a {
   color: #11999e;
-  font-family: "Merriweather", serif;
+  font-family: "Montserrat", sans-serif;
   margin: 10px 20px;
   text-decoration: none;
 }
 a:hover {
   color: #eaf6f6;
 }
+a.scroll-down:hover {
+  color: #27496d;
+}
+a.scroll-down:after {
+  content: " \2193";
+}
+a.scroll-up:after {
+  content: " \2191";
+}
 p {
   line-height: 2;
 }
 hr {
-  border: 6px dotted #bfbfbf;
+  border: 6px dotted #fff;
   border-bottom: none;
   width: 14%;
   margin: 100px auto;
@@ -336,14 +378,15 @@ hr {
   box-sizing: border-box;
   margin: 16px 0;
   border: 0;
-  background: #111;
+  background: #142850;
   padding: 20px 40px;
   outline: none;
   color: #ddd;
   transition: 0.5s;
+  border-radius: 5px;
 }
 .contact-form-text:focus {
-  box-shadow: 0 0 10px 4px #34495e;
+  box-shadow: 0 0 10px 4px #27496d;
 }
 textarea.contact-form-text {
   resize: none;
@@ -352,7 +395,7 @@ textarea.contact-form-text {
 .contact-form-btn {
   float: right;
   border: 0;
-  background: #34495e;
+  background: #27496d;
   color: #fff;
   padding: 12px 50px;
   border-radius: 20px;
@@ -363,14 +406,18 @@ textarea.contact-form-text {
   background: #2980b9;
 }
 #to-top-button {
-  bottom: 20px;
   z-index: 99;
-  font-size: 18px;
   border: none;
   outline: none;
-  background-color: #2980b9;
+  background-color: #27496d;
   color: white;
   cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
+  padding: 12px 50px;
+  border-radius: 20px;
+}
+#to-top-button:hover {
+  background: #2980b9;
+}
+.hr-none {
+  border: 6px dotted #fff;
 }
