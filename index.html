@@ -21,6 +21,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
     <link rel="icon" href="favicon.ico" />
     <link
@@ -51,7 +52,9 @@
       <div class="logo">
         <img src="images/avatar.png" alt="logo" />
       </div>
-      <div class="menu"><h4>menu</h4></div>
+      <div class="menu">
+        <h4><i class="fa fa-bars" aria-hidden="true"></i></h4>
+      </div>
     </div>
     <!-- nav bar -->
     <nav>
@@ -96,7 +99,12 @@
     <a id="about-me"></a>
     <div class="middle-container">
       <div class="profile">
-        <img class="avatar" src="images/avatar.png" alt="avatar pic" />
+        <img
+          class="avatar"
+          src="images/profile2.png"
+          alt="avatar pic"
+          style="width: 10%;"
+        />
         <h2>Hello.</h2>
         <p class="intro">
           Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna.
@@ -107,130 +115,121 @@
       <a id="projects"></a>
       <div class="projects">
         <h2>Projects</h2>
+        <h4>Hover over/ click for details</h4>
         <div class="project-container">
           <div class="row">
             <div class="column">
               <div class="container">
-                <img src="images/avatar.png" style="width: 100%;" />
+                <img src="images/dice.png" style="width: 80%;" />
                 <div class="overlay">
-                  <div class="text">Hello World</div>
-                </div>
-              </div>
-              <div class="container">
-                <img src="images/avatar.png" style="width: 100%;" />
-                <div class="overlay">
-                  <div class="text">Hello World</div>
+                  <br>
+                  <h4>DnD Dice:</h4>                    <i class="devicon-swift-plain" style="font-size: x-large;"></i>   </br>            
+
+                  <p>
+                    iOS app for when you need to roll dice while playing D&D</br> </p>
+
+                  <input
+                    type="button"
+                    class="learn-more-btn"
+                    value="View Github Repo"
+                  />
                 </div>
               </div>
             </div>
 
             <div class="column">
               <div class="container">
-                <img src="images/avatar.png" style="width: 100%;" />
+                <img src="images/music.png" style="width: 80%;" />
                 <div class="overlay">
-                  <div class="text">Hello World</div>
-                </div>
-              </div>
-              <div class="container">
-                <img src="images/avatar.png" style="width: 100%;" />
-                <div class="overlay">
-                  <div class="text">Hello World</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="column">
-              <div class="container">
-                <img src="images/avatar.png" style="width: 100%;" />
-                <div class="overlay">
-                  <div class="text">Hello World</div>
-                </div>
-              </div>
-              <div class="container">
-                <img src="images/avatar.png" style="width: 100%;" />
-                <div class="overlay">
-                  <div class="text">Hello World</div>
+                  <br>
+                  <h4>SpotLyrics</h4><i class="devicon-python-plain" style="font-size: x-large;"></i>
+                </br>
+                  <p>
+                    Terminal program to view the lyrics of the song you listening to on Spoitfy
+                  </p>
+                  <input
+                    type="button"
+                    class="learn-more-btn"
+                    value="View Github Repo"
+                  />
                 </div>
               </div>
             </div>
 
             <div class="column">
               <div class="container">
-                <img src="images/avatar.png" style="width: 100%;" />
+                <img src="images/spell.png" style="width: 80%;" />
                 <div class="overlay">
-                  <div class="text">Hello World</div>
-                </div>
-              </div>
-              <div class="container">
-                <img src="images/avatar.png" style="width: 100%;" />
-                <div class="overlay">
-                  <div class="text">Hello World</div>
+                  <br>
+                  <h4>Handwritting AutoCorrect</h4><i class="devicon-python-plain" style="font-size: x-large;"></i><em>   + Solace + raspberryPi</em>
+                </br>
+                  <p>
+                    Spell checker for handwritten notes on touch devices(Group project at UofT Makeathon 2020)
+                  </p>
+                  <input
+                    type="button"
+                    class="learn-more-btn"
+                    value="More Details"
+                  />
                 </div>
               </div>
             </div>
-          </div>
+            
+            <div class="column">
+              <div class="container">
+                <img src="images/exam.png" style="width: 80%;" />
+                <div class="overlay">
+                  <br>
+                  <h4>EXAM GOAT</h4><i class="devicon-react-plain" style="font-size: x-large;"></i><em> + Firebase</em>
+                </br>
+                  <p>
+                    Online coding examination portal (Group project at Hack the North 2019)
+                  </p>
+                  <input
+                    type="button"
+                    class="learn-more-btn"
+                    value="More Details"
+                  />                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="container">
+                <img src="images/portfolio.png" style="width: 80%;" />
+                <div class="overlay">
+                  <br>
+                  <h4>Personal portfolio</h4><i class="devicon-html5-plain" style="font-size: x-large;"></i>+ <i class="devicon-css3-plain" style="font-size: x-large;"></i>+ <i class="devicon-javascript-plain" style="font-size: x-large;"></i>
+                </br>
+                  <p>
+                    Online coding examination portal (Group project at Hack the North 2019)
+                  </p>
+                  <input
+                    type="button"
+                    class="learn-more-btn"
+                    value="More Details"
+                  />                </div>
+              </div>
+            </div>
         </div>
-      </div>
-      <hr />
+    </div>
+
+
       <a id="blogs"></a>
       <div class="projects">
         <h2>Blogs</h2>
         <div class="project-container">
           <div class="row">
-            <div class="column">
+            <div class="column1">
               <div class="container">
-                <img src="images/avatar.png" style="width: 100%;" />
-                <div class="overlay">
-                  <div class="text">Hello World</div>
-                </div>
-              </div>
-              <div class="container">
-                <img src="images/avatar.png" style="width: 100%;" />
+                <img src="images/game.svg" style="width: 50%;" />
                 <div class="overlay">
                   <div class="text">Hello World</div>
                 </div>
               </div>
             </div>
 
-            <div class="column">
+            <div class="column1">
               <div class="container">
-                <img src="images/avatar.png" style="width: 100%;" />
-                <div class="overlay">
-                  <div class="text">Hello World</div>
-                </div>
-              </div>
-              <div class="container">
-                <img src="images/avatar.png" style="width: 100%;" />
-                <div class="overlay">
-                  <div class="text">Hello World</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="column">
-              <div class="container">
-                <img src="images/avatar.png" style="width: 100%;" />
-                <div class="overlay">
-                  <div class="text">Hello World</div>
-                </div>
-              </div>
-              <div class="container">
-                <img src="images/avatar.png" style="width: 100%;" />
-                <div class="overlay">
-                  <div class="text">Hello World</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="column">
-              <div class="container">
-                <img src="images/avatar.png" style="width: 100%;" />
-                <div class="overlay">
-                  <div class="text">Hello World</div>
-                </div>
-              </div>
-              <div class="container">
-                <img src="images/avatar.png" style="width: 100%;" />
+                <img src="images/music.svg" style="width: 50%;" />
                 <div class="overlay">
                   <div class="text">Hello World</div>
                 </div>
@@ -244,7 +243,12 @@
       <div class="skills">
         <h2>Work Experience</h2>
         <div class="skill-row">
-          <img class="code-pic" src="images/code.png" alt="code pic" />
+          <img
+            class="code-pic"
+            src="images/controller.png"
+            alt="code pic"
+            style="width: 15%; margin-top: 0px;"
+          />
           <h3>PlayStation</h3>
           <p>
             Lorem ipsum dolor sit amet, quis in duis, iaculis id felis.
@@ -253,8 +257,13 @@
           </p>
         </div>
         <div class="skill-row">
-          <img class="sleep-pic" src="images/sleep.png" alt="sleep pic" />
-          <h3>BlackBerry</h3>
+          <img
+            class="sleep-pic"
+            src="images/smarthome.svg"
+            alt="sleep pic"
+            style="width: 15%; margin-top: 0px;"
+          />
+          <h3 class="BB">BlackBerry</h3>
           <p>
             Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu,
             bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel
@@ -262,7 +271,12 @@
           </p>
         </div>
         <div class="skill-row">
-          <img class="code-pic" src="images/code.png" alt="code pic" />
+          <img
+            class="code-pic"
+            src="images/computer.svg"
+            alt="code pic"
+            style="width: 15%; margin-top: 0px;"
+          />
           <h3>SAP</h3>
           <p>
             Lorem ipsum dolor sit amet, quis in duis, iaculis id felis.
@@ -310,18 +324,24 @@
         </form>
       </div>
     </div>
-    <hr />
-    <div class="bottom-container">
-      <div style="margin: 24px 0;">
+
+    <hr class="hr-footer" />
+
+    <!-- footer -->
+    <a href="#top" class="scroll-up">Back to Top</a>
+    <div class="footer">
+      <div class="social">
         <a class="footer-link" href="https://www.linkedin.com/AzinT"
           ><i class="fa fa-linkedin"></i
         ></a>
         <a class="footer-link" href="https://github.com/AzinT"
           ><i class="fa fa-github"></i
         ></a>
+        <a class="footer-link" href="https://github.com/AzinT">
+          <i class="fa fa-file"></i>
+        </a>
       </div>
       <p class="copyright">© 2020 Azin Taqizadeh.</p>
-      <a href="#top" class="scroll-up">Back to Top</a>
     </div>
   </body>
 </html>
