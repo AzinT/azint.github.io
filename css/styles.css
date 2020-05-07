@@ -175,7 +175,7 @@ h2 {
   font-family: "Abril Fatface", cursive;
   font-size: 2.5rem;
   color: #66bfbf;
-  padding-bottom: 100px;
+  padding-bottom: 10vh;
   margin-bottom: 0;
 }
 h3 {
@@ -201,9 +201,6 @@ a {
 a.scroll-down:after {
   content: " \2193";
 }
-a.scroll-up:after {
-  content: " \2191";
-}
 p {
   line-height: 2;
 }
@@ -211,7 +208,7 @@ hr {
   border: 6px dotted #fff;
   border-bottom: none;
   width: 14%;
-  margin: 100px auto;
+  margin: 30px auto;
 }
 .top-container {
   background-color: #eaf6f6;
@@ -223,7 +220,7 @@ hr {
 }
 .bottom-container {
   background-color: #66bfbf;
-  padding: 50px 0 20px 0;
+  margin-bottom: 0;
 }
 .top-cloud {
   position: absolute;
@@ -264,9 +261,6 @@ hr {
   width: 40%;
   margin: 40px auto 60px;
 }
-.copyright {
-  font-weight: 0.7rem;
-}
 * {
   box-sizing: border-box;
 }
@@ -286,9 +280,20 @@ hr {
   max-width: 25%;
   padding: 0 4px;
 }
+/* Create four equal columns that sits next to each other */
+.column1 {
+  position: relative;
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
 
 .column img {
-  margin-top: 8px;
+  margin-top: 18px;
+  vertical-align: middle;
+}
+.column1 img {
+  margin-top: 18px;
   vertical-align: middle;
 }
 
@@ -310,6 +315,13 @@ hr {
     max-width: 100%;
   }
 }
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column1 {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 .container {
   position: relative;
 }
@@ -325,10 +337,9 @@ hr {
   transition: 0.5s ease;
   background-color: #ffffff;
 }
-@media (hover: hover) {
-  .container:hover .overlay {
-    opacity: 1;
-  }
+
+.container:hover .overlay {
+  opacity: 1;
 }
 
 .text {
@@ -381,4 +392,33 @@ textarea.contact-form-text {
   .contact-form-btn:hover {
     background: #2980b9;
   }
+}
+.hr-footer {
+  margin: 8vh auto;
+}
+a.scroll-up {
+  color: #142850;
+}
+a.scroll-up:after {
+  content: " \2191";
+}
+.footer {
+  padding: 7vh 0 2vh 0;
+  background: #00909e;
+}
+.social {
+  flex-direction: row;
+}
+.footer-link {
+  color: #142850;
+  justify-content: center;
+  display: inline-block;
+  font-size: xx-large;
+}
+.copyright {
+  font-size: 10pt;
+  margin-top: 15px;
+}
+.BB {
+  text-align: right;
 }
