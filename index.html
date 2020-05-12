@@ -50,7 +50,7 @@
     <div class="responsive-bar">
       <!-- logo -->
       <div class="logo">
-        <img src="images/avatar.png" alt="logo" />
+        <img src="images/logo.png" alt="logo" />
       </div>
       <div class="menu">
         <h4><i class="fa fa-bars" aria-hidden="true"></i></h4>
@@ -60,14 +60,14 @@
     <nav>
       <!-- logo -->
       <div class="logo">
-        <img src="images/avatar.png" alt="logo" />
+        <img src="images/logo.png" alt="logo" />
       </div>
       <!-- menu items -->
       <ul>
         <li>
           <a href="#top" class="active" style="margin-left: 0px;">Home</a>
         </li>
-        <li><a href="#about-me" style="margin-left: 0px;">About me</a></li>
+        <li><a href="#about-me" class="navi" style="margin-left: 0px;">About me</a></li>
         <li><a href="#projects" style="margin-left: 0px;">Projects</a></li>
         <li><a href="#blogs" style="margin-left: 0px;">Blogs</a></li>
         <li><a href="#work" style="margin-left: 0px;">Work Experience</a></li>
@@ -101,9 +101,9 @@
       <div class="profile">
         <img
           class="avatar"
-          src="images/profile2.png"
+          id="avatr"
+          src="images/crop4.png"
           alt="avatar pic"
-          style="width: 10%;"
         />
         <h2>Hello.</h2>
         <p class="intro">
@@ -197,10 +197,10 @@
                 <img src="images/portfolio.png" style="width: 80%;" />
                 <div class="overlay">
                   <br>
-                  <h4>Personal portfolio</h4><i class="devicon-html5-plain" style="font-size: x-large;"></i>+ <i class="devicon-css3-plain" style="font-size: x-large;"></i>+ <i class="devicon-javascript-plain" style="font-size: x-large;"></i>
+                  <h4>Personal portfolio</h4><i class="devicon-html5-plain" style="font-size: x-large;"></i>+ <i class="devicon-css3-plain" style="font-size: x-large;"></i>+ <i class="devicon-javascript-plain" style="font-size: x-large;"></i> + <i class="devicon-illustrator-plain" style="font-size: x-large;"></i>
                 </br>
                   <p>
-                    Online coding examination portal (Group project at Hack the North 2019)
+                    Personal website
                   </p>
                   <input
                     type="button"
@@ -220,25 +220,16 @@
           <div class="row">
             <div class="column1">
               <div class="container">
-                <div class="card">
-                  <a href="https://google.com"><img src="images/profile2.png" style="width: 50%;" />
-                  <h1>John Doe</h1>
-                  <p class="title">CEO & Founder, Example</p>
-                  <p class="title1">Harvard University</p>
-                  <br></a>
-                </div>
+                <a href="https://devblog.blackberry.com/en/2020/02/securely-reporting-data-with-spark-communication-SDK"  target="_blank">
+                <img src="images/foosblog.png" style="width: 56%;" /></a>
+                <h3>FoosBlog</h3>
+                <!-- <p>hello world</p> -->
               </div>
             </div>
-
             <div class="column1">
               <div class="container">
-                <div class="card">
-                  <a href="https://google.com"><img src="images/profile2.png" style="width: 50%;" />
-                  <h1>John Doe</h1>
-                  <p class="title">CEO & Founder, Example</p>
-                  <p class="title1">Harvard University</p>
-                  <br></a>
-                </div>
+                <a href="https://devblog.blackberry.com/en/2019/11/foosnblog-using-the-athoc-sdk-for-foosball"  target="_blank">
+                  <img src="images/blog1.png" style="width: 80%;" /></a>                <h3>Securely reporting data with Spark Communication SDK</h3>
               </div>
             </div>
           </div>
@@ -265,7 +256,7 @@
         <div class="skill-row">
           <img
             class="sleep-pic"
-            src="images/smarthome.svg"
+            src="images/iot.png"
             alt="sleep pic"
             style="width: 15%; margin-top: 0px;"
           />
@@ -279,7 +270,7 @@
         <div class="skill-row">
           <img
             class="code-pic"
-            src="images/computer.svg"
+            src="images/bug.png"
             alt="code pic"
             style="width: 15%; margin-top: 0px;"
           />
@@ -302,7 +293,8 @@
         </p>
       </div>
       <div class="contact-section">
-        <h2>Stay connected</h2>
+        <!-- <h2>Stay connected</h2> -->
+        <img src="images/profile2.png" alt="" style="width:10%">
         <form
           class="contact-form"
           action="https://formspree.io/az.taqizadeh@yahoo.com"
@@ -313,6 +305,7 @@
             class="contact-form-text"
             placeholder="Your Name"
             name="name"
+            style="margin-top:0;"
           />
           <input
             type="email"

@@ -54,6 +54,7 @@ nav ul li a {
 }
 nav.black ul li a {
   line-height: 40px;
+  color: #eaf6f6;
 }
 @media (hover: hover) {
   nav ul li a:hover {
@@ -291,6 +292,7 @@ hr {
   vertical-align: middle;
 }
 .column1 img {
+  margin-top: 150px;
   vertical-align: middle;
 }
 
@@ -307,7 +309,9 @@ hr {
     font-size: 2vw;
   }
 }
-
+#avatr {
+  width: 10%;
+}
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
   .column {
@@ -317,14 +321,24 @@ hr {
   .overlay {
     font-size: 3vw;
   }
+  .column1 {
+    flex: 100%;
+    max-width: 100%;
+  }
+  #avatr {
+    width: 35%;
+  }
 }
 .container {
+  text-align: center;
   position: relative;
 }
 .container h4 {
   margin-top: 0;
 }
-
+.container a img {
+  margin: auto;
+}
 .overlay {
   margin-top: 8px;
   position: absolute;
@@ -429,19 +443,4 @@ a.scroll-up:after {
   border-radius: 20px;
   cursor: pointer;
   transition: 0.5s;
-}
-.card {
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  display: inline-block;
-}
-.title {
-  color: grey;
-  font-size: 18px;
-}
-.title1 {
-  color: grey;
-  font-size: 10px;
 }
