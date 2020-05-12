@@ -182,6 +182,7 @@ h2 {
 h3 {
   font-family: "Montserrat", sans-serif;
   color: #11999e;
+  line-height: 6vh;
 }
 a {
   color: #11999e;
@@ -236,6 +237,25 @@ hr {
   width: 50%;
   margin: 100px auto;
   text-align: left;
+  font-size: 1vw;
+}
+@media (max-width: 800px) {
+  .skill-row {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 10vh;
+    text-align: left;
+    font-size: 3vw;
+  }
+  .contact-section img {
+    width: 30% !important;
+  }
+  h3 {
+    font-size: 3vw;
+  }
+}
+.contact-section img {
+  width: 10%;
 }
 .sleep-pic {
   width: 25%;
@@ -251,13 +271,14 @@ hr {
   width: 15%;
 }
 .intro {
-  width: 30%;
+  width: 70%;
   margin: auto;
 }
 .contact-me {
-  width: 40%;
+  width: 80%;
   margin: 40px auto 60px;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -327,6 +348,10 @@ hr {
   }
   #avatr {
     width: 35%;
+  }
+  .career {
+    padding-inline-start: 30px;
+    text-align: justify;
   }
 }
 .container {
@@ -431,10 +456,9 @@ a.scroll-up:after {
 .copyright {
   font-size: 10pt;
   margin-top: 15px;
+  color: #fff;
 }
-.BB {
-  text-align: right;
-}
+
 .learn-more-btn {
   border: 0;
   background: #27496d;
@@ -443,4 +467,7 @@ a.scroll-up:after {
   border-radius: 20px;
   cursor: pointer;
   transition: 0.5s;
+}
+.career {
+  line-height: 5vh;
 }
