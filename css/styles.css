@@ -44,7 +44,7 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  font-size: 0.8vw;
+  font-size: 1vw;
 }
 
 nav ul li {
@@ -229,16 +229,12 @@ a.scroll-down:hover {
   color: #27496d;
 }
 
-a.scroll-down:after {
-  content: " \2193";
-}
-
 p {
   line-height: 2;
 }
 
 hr {
-  border: 6px dotted #fff;
+  border: 6px dotted transparent;
   border-bottom: none;
   width: 14%;
   margin: 30px auto;
@@ -474,7 +470,7 @@ hr {
 .contact-form {
   max-width: 600px;
   margin: auto;
-  padding: 0 10px;
+  padding: 2vh 10px;
   overflow: hidden;
 }
 
@@ -562,4 +558,8 @@ a.scroll-up:after {
 
 .career {
   line-height: 5vh;
+}
+::placeholder {
+  color: #eaf6f6;
+  opacity: 1;
 }
