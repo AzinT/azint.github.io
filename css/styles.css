@@ -390,10 +390,6 @@ hr {
   h1 {
     font-size: 10vw;
   }
-
-  .container p {
-    font-size: 2vw;
-  }
 }
 
 #avatr {
@@ -423,6 +419,18 @@ hr {
   .career {
     padding-inline-start: 30px;
     text-align: justify;
+  }
+}
+@media (max-width: 560px) {
+  .brief-text {
+    font-size: 2vw;
+    padding-left: 10px;
+    padding-right: 25px;
+  }
+  p {
+    font-size: 4vw;
+    padding-left: 10px;
+    padding-right: 25px;
   }
 }
 
