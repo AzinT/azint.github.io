@@ -94,13 +94,13 @@
         </div>
         <div class="brief-class">
             <p class="brief-text">
-                I'm a programmer!<br />I'm a programmer!<br />I'm a programmer!<br />I'm
-                a programmer!
+              Third year <br> Computer engineering <br> student at University of <br> Waterloo
             </p>
         </div>
         <div class="empty-class"></div>
         <div class="empty-class"></div>
-        <a href="#about-me" class="scroll-down">Click to Scroll <i class="arrow down"></i></a>
+        <hr>
+        <a href="#about-me" class="scroll-down"> About Me<i class="fa fa-arrow-down"></i></a>
     </div>
     <a id="about-me"></a>
     <div class="middle-container">
@@ -115,7 +115,9 @@
         <a id="projects"></a>
         <div class="projects">
             <h2>Projects</h2>
-            <h4>Hover over/ click for details</h4>
+            <span class="lg-view"><h4>Hover over for details</h4></span>
+            <span class="sm-view"><h4>Tap for details</h4></span>
+            
             <div class="project-container">
                 <div class="row">
                     <div class="column">
@@ -128,8 +130,9 @@
                                 <p>
                                     iOS app for when you need to roll dice while playing D&D</br> </p>
 
-                                <input type="button" class="learn-more-btn" value="View Github Repo" />
-                            </div>
+                                    <button class="learn-more-btn" onClick="window.open('https://github.com/AzinT/DnD_Dice');">
+                                      <span>Gtihub</span>
+                                 </button>                             </div>
                         </div>
                     </div>
 
@@ -143,8 +146,9 @@
                                 <p>
                                     Terminal program to view the lyrics of the song you listening to on Spoitfy
                                 </p>
-                                <input type="button" class="learn-more-btn" value="View Github Repo" />
-                            </div>
+                                <button class="learn-more-btn" onClick="window.open('https://github.com/AzinT/SpotGenius/');">
+                                  <span>Github</span>
+                             </button>                             </div>
                         </div>
                     </div>
 
@@ -158,8 +162,9 @@
                                 <p>
                                     Spell checker for handwritten notes on touch devices(Group project at UofT Makeathon 2020)
                                 </p>
-                                <input type="button" class="learn-more-btn" value="More Details" />
-                            </div>
+                                <button class="learn-more-btn" onClick="window.open('https://devpost.com/software/supremeuoft');">
+                                  <span>Devpost</span>
+                             </button>                            </div>
                         </div>
                     </div>
 
@@ -173,7 +178,9 @@
                                 <p>
                                     Online coding examination portal (Group project at Hack the North 2019)
                                 </p>
-                                <input type="button" class="learn-more-btn" value="More Details" />
+                                <button class="learn-more-btn" onClick="window.open('https://devpost.com/software/exam-goat');">
+                                  <span>Devpost</span>
+                             </button>
                             </div>
                         </div>
                     </div>
@@ -187,8 +194,9 @@
                                 <p>
                                     A corner of the web to display my experience
                                 </p>
-                                <input type="button" class="learn-more-btn" value="View Github Repo" />
-                            </div>
+                                <button class="learn-more-btn" onClick="window.open('https://devpost.com/software/supremeuoft');">
+                                  <span>Github</span>
+                             </button>                             </div>
                         </div>
                     </div>
                 </div>
@@ -199,13 +207,17 @@
             <div class="projects">
                 <h2>Blogs</h2>
                 <div class="project-container">
+                  <hr>
                     <div class="row">
                         <div class="column1">
                             <div class="container">
                                 <a href="https://devblog.blackberry.com/en/2019/11/foosnblog-using-the-athoc-sdk-for-foosball" target="_blank">
-                                    <img src="images/foospi_correct.png" style="width: 56%;" />
-                                    <h3>FoosBlog</h3>
-                                </a>
+                                    <img src="images/foospi_correct.png" style="width: 62%;" />
+                                    <h3>FoosBlog: Using AtHoc SDK for Foosball</h3> </a>
+                                <p>                                       
+                         
+                                  FoosPi is a smart foosball table that makes finding teammates easier. Simply press a button to send an SMS to all the registered players at your office using AtHoc SDK and ask them to join.</p><hr>
+
                             </div>
                         </div>
                         <div class="column1">
@@ -213,8 +225,10 @@
 
                                 <a href="https://devblog.blackberry.com/en/2020/02/securely-reporting-data-with-spark-communication-SDK" target="_blank">
                                     <img src="images/blog1.png" style="width: 80%;" />
-                                    <h3>Securely reporting data with Spark Communication SDK</h3>
-                                </a>
+                                    <h3>Securely reporting data with Spark SDK</h3>                              </a>
+
+                                <p>This IoT Analytics project showcases how a secure connection can be established between a client and a server using Spark SDK. In this example, values measured from temperature and humidity sensors are transmitted to the user for monitoring purposes </p>
+
                             </div>
                         </div>
                     </div>
@@ -227,7 +241,7 @@
                 <div class="skill-row">
                     <img class="code-pic" src="images/controller.png" alt="code pic" style="width: 15%; margin-top: 0px;" />
                     <h3>Software Developer Intern - Front End</h3>
-                    <h4><em>SONY Interactive Entertainement</em></h4>
+                    <h3 style="color: #40514e;"><em>SONY Interactive Entertainement</em></h3>
                     <ul class="career">
                         <li> Developed high quality, bug-free code used by millions of customers using JavaScript and TypeScript, editing and linting codes to comply to the pre-defined standards </li>
                         <li> Assisted in creating a package to facilitate the use of new APIs for clients and contributed in integrating these APIs with the existing source code </li>
@@ -240,12 +254,12 @@
                 <div class="skill-row">
                     <img class="code-pic" src="images/iot.png" alt="sleep pic" style="width: 15%; margin-top: 0px;" />
                     <h3 class="BB">Enterprise Solutions Developer - IoT </h3>
-                    <h4 class="BB"><em>BlackBerry</em></h4>
+                    <h3 style="color: #40514e;"><em>BlackBerry</em></h3>
 
                     <ul class="career" id="BB">
                         <li> Designed and developed IoT apps using embedded Node.js on Raspberry Pi and BlackBerry Spark Communications SDK for different enterprise use cases </li>
                         <li> Designed a user-friendly UI to present real-time and analytics data collected from sensors using JavaScript libraries </li>
-                        <li> • Applied MQTT protocol to send commands and receive events from devices for communication between ESP8260 microcontroller and RaspberryPi </li>
+                        <li> Applied MQTT protocol to send commands and receive events from devices for communication between ESP8260 microcontroller and RaspberryPi </li>
                         <li>Wrote unit test for all the new codes using Sinon.JS to detect any early stage defects, maintaining high test coverage rate</li>
                         <li>Reviewed and approved other developers pull requests, solved any merge conflicts along the way</li>
 
@@ -255,15 +269,13 @@
                 <div class="skill-row">
                     <img class="code-pic" src="images/bug.png" alt="code pic" style="width: 15%; margin-top: 0px;" />
                     <h3>Software Quality Assurance/ Web Automation Developer </h3>
-                    <h4 class="BB"><em>SAP</em></h4>
+                    <h3 style="color: #40514e;"><em>SAP</em></h3>
 
                     <ul class="career" id="BB">
-                        <li> Designed and developed IoT apps using embedded Node.js on Raspberry Pi and BlackBerry Spark Communications SDK for different enterprise use cases </li>
-                        <li> Designed a user-friendly UI to present real-time and analytics data collected from sensors using JavaScript libraries </li>
-                        <li> • Applied MQTT protocol to send commands and receive events from devices for communication between ESP8260 microcontroller and RaspberryPi </li>
-                        <li>Wrote unit test for all the new codes using Sinon.JS to detect any early stage defects, maintaining high test coverage rate</li>
-                        <li>Reviewed and approved other developers pull requests, solved any merge conflicts along the way</li>
-
+                        <li> Designed and performed test cases on HANA Run-Time Tools to verify the newly developed features. </li>
+                        <li> Developed automation testing using Selenium and Python for refactoring and covering testing of the recent features. </li>
+                        <li> Gained experience in web development along with SQL knowledge through automation testing design and development </li>
+                        <li> Practiced scrum methodologies and participated in weekly meetings</li>
                     </ul>
                 </div>
             </div>
@@ -280,7 +292,7 @@
                 <!-- <h2>Stay connected</h2> -->
                 <img src="images/profile2.png" alt="profile-icon">
                 <form class="contact-form" action="https://formspree.io/az.taqizadeh@yahoo.com" method="POST">
-                    <input type="text" class="contact-form-text" placeholder="Your Name" name="name" style="margin-top:0;" />
+                    <input type="text" class="contact-form-text" placeholder="Your Name" name="name" style="margin-top:0; color: #fff;" />
                     <input type="email" class="contact-form-text email" placeholder="Your Email" name="email" />
                     <textarea class="contact-form-text message" placeholder="Your Message" name="message"></textarea>
                     <div class="status"></div>
@@ -295,11 +307,10 @@
         <a href="#top" class="scroll-up">Back to Top</a>
         <div class="footer">
             <div class="social">
-                <a class="footer-link" href="https://www.linkedin.com/AzinT"><i class="fa fa-linkedin"></i></a>
+                <a class="footer-link" href="https://linkedin.com/in/AzinT"><i class="fa fa-linkedin"></i></a>
                 <a class="footer-link" href="https://github.com/AzinT"><i class="fa fa-github"></i></a>
                 <a class="footer-link" href="https://github.com/AzinT">
-                    <i class="fa fa-file"></i>
-                </a>
+                  <i class="fa fa-file"></i>                </a>
             </div>
             <p class="copyright">© 2020 Azin Taqizadeh.</p>
         </div>
